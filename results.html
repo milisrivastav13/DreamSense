@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dream Result</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      max-width: 500px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #4a4e69;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #4a4e69;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Dream Analysis Result 🌙</h2>
+    <p><strong>Your Dream:</strong><br>{{ dream }}</p>
+    <p><strong>Detected Emotion:</strong> {{ emotion }}</p>
+    <p><strong>Polarity Score:</strong> {{ polarity }}</p>
+    <a href="/" class="back-link">🔙 Analyze Another</a>
+  </div>
+</body>
+</html>
